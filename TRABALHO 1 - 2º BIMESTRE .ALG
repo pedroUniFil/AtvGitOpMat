@@ -11,7 +11,8 @@ funcao f_soma (n1, n2 : inteiro) : inteiro
 var
    resultado : inteiro
 inicio
-
+   resultado <- 0
+   resultado <- n1 + n2
    retorne resultado
 fimFuncao
 
@@ -19,7 +20,8 @@ funcao f_subt (n1, n2 : inteiro) : inteiro
 var
    resultado : inteiro
 inicio
-
+   resultado <- 0
+   resultado <- n1 - n2
    retorne resultado
 fimFuncao
 
@@ -27,6 +29,9 @@ funcao f_divisao (n1, n2 : inteiro) : inteiro
 var
    resultado : inteiro
 inicio
+
+   resultado<-0
+   resultado<- n1 \ n2
 
    retorne resultado
 fimFuncao
