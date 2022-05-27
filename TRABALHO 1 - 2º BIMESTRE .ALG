@@ -30,6 +30,9 @@ var
    resultado : inteiro
 inicio
 
+   resultado<-0
+   resultado<- n1 \ n2
+
    retorne resultado
 fimFuncao
 
