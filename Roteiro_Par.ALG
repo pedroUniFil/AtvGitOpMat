@@ -1,8 +1,8 @@
-Algoritmo "semnome"
-// Disciplina   : [2022-ES-LPA: Estruturas de Dados Est·ticas]
-// Professor   : Edson Shinki Kaneshima
-// DescriÁ„o   : Aqui vocÍ descreve o que o programa faz! (funÁ„o)
-// Autor(a)    : Nome do(a) aluno(a)
+Algoritmo "Function Par"
+// Disciplina   : [2022-ES-LPA: Estruturas de Dados Est√°ticas]
+// Professor   : Ricardo Petri
+// Descri√ß√£o   : O c√≥digo realiza a verifica√ß√£o de qual n√∫mero √© par
+// Autor(a)    : Pedro/Gabriel/Nicolas
 // Data atual  : 30/05/2022
 Var
    vet: vetor[0..9] de inteiro
@@ -14,23 +14,23 @@ par: inteiro
 inicio
    escreval ("numeros pares:")
    para indice <- 0 ate 9 passo 1 faca
-      se
+      se vet[indice] mod 2 = 0 entao
          escreva (vet[indice], " _ ")
       fimse
    fimpara
 fimfuncao
 
 Inicio
-   vet[0] <-
-   vet[1] <-
-   vet[2] <-
-   vet[3] <-
-   vet[4] <-
-   vet[5] <-
-   vet[6] <-
-   vet[7] <-
-   vet[8] <-
-   vet[9] <-
+   vet[0] <- 3
+   vet[1] <- 4
+   vet[2] <- 7
+   vet[3] <- 11
+   vet[4] <- 14
+   vet[5] <- 99
+   vet[6] <- 10
+   vet[7] <- 21
+   vet[8] <- 19
+   vet[9] <- 57
 
     escreval (f_par)
 Fimalgoritmo
