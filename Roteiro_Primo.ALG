@@ -1,17 +1,34 @@
 Algoritmo "semnome"
-// Disciplina   : [Linguagem e L�gica de Programa��o]
-// Professor   : Edson Shinki Kaneshima
-// Descri��o   : Aqui voc� descreve o que o programa faz! (fun��o)
-// Autor(a)    : Nome do(a) aluno(a)
+// Disciplina   : [Linguagem e LÃ³gica de ProgramaÃ§Ã£o]
+// Professor   : Ricardo Petri
+// DescriÃ§Ã£o   : Funcao que realiza a verificacÃ£o se o numero Ã© primo
+// Autor(a)    : Gabriel Henrique Soares Maronezzi
 // Data atual  : 30/05/2022
 Var
-   // Se��o de Declara��es das vari�veis
+   // SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis
    i, j , cont: inteiro
    vet : vetor [0..9] de inteiro
 
+procedimento p_primo
+var
+inicio
+   para j <- 0 ate 9 passo 1 faca
+      para i <- vet[j] ate 0  passo -1 faca
+         se( j mod i  = 0 ) entao
+            cont <- cont +1
+         fimse
+      fimpara
+      se cont = 2 entao
+         escreval("O",vet[j]," nÃºmero Ã© primo")
+      senao
+         escreval("O",vet[j]," nÃºmero nÃ£o Ã© primo")
+      fimse
+      cont<- 0
 
+   fimpara
+fimprocedimento
 Inicio
-   // Se��o de Comandos, procedimento, fun��es, operadores, etc...
+   // SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc...
 
    vet[0] <-3
    vet[1] <-4
