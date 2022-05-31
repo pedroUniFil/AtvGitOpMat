@@ -1,24 +1,25 @@
-Algoritmo "Function Par"
-// Disciplina   : [2022-ES-LPA: Estruturas de Dados Estáticas]
+Algoritmo "impar"
+// Disciplina   : [Ferramentas de Controle de Vers�o]
 // Professor   : Ricardo Petri
-// Descrição   : O código realiza a verificação de qual número é par
-// Autor(a)    : Pedro/Gabriel/Nicolas
+// Descri��o   : fun��o que identifica numeros impares
+// Autor(a)    : nicolas cesar
 // Data atual  : 30/05/2022
 Var
    vet: vetor[0..9] de inteiro
    indice:inteiro
 
-funcao f_par : inteiro
+   procedimento p_impar
 var
-par: inteiro
 inicio
-   escreval ("numeros pares:")
+   escreval ("numeros impares:")
    para indice <- 0 ate 9 passo 1 faca
-      se vet[indice] mod 2 = 0 entao
+      se vet[indice] mod 2 <> 0 entao
          escreva (vet[indice], " _ ")
+
       fimse
    fimpara
-fimfuncao
+   escreval ("")
+fimprocedimento
 
 Inicio
    vet[0] <- 3
@@ -32,5 +33,5 @@ Inicio
    vet[8] <- 19
    vet[9] <- 57
 
-    escreval (f_par)
+  p_impar
 Fimalgoritmo
