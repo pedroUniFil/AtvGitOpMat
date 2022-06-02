@@ -1,34 +1,28 @@
-Algoritmo "semnome"
-// Disciplina   : [Linguagem e LÃ³gica de ProgramaÃ§Ã£o]
-// Professor   : Ricardo Petri
-// DescriÃ§Ã£o   : Funcao que realiza a verificacÃ£o se o numero Ã© primo
-// Autor(a)    : Gabriel Henrique Soares Maronezzi
-// Data atual  : 30/05/2022
-Var
-   // SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis
-   i, j , cont: inteiro
-   vet : vetor [0..9] de inteiro
-
-procedimento p_primo
+Algoritmo "PRIMO"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor    : Ricardo Petri
+// Descrição    : Funcao que realiza a verificação se o numero é primo
+// Autor(a)     : Gabriel Henrique Soares Maronezzi
+// Data atual   : 30/05/2022
 var
 inicio
    para j <- 0 ate 9 passo 1 faca
+      cont<-0
       para i <- vet[j] ate 0  passo -1 faca
-         se( j mod i  = 0 ) entao
+         se( vet[j] mod i  = 0 ) entao
             cont <- cont +1
          fimse
       fimpara
       se cont = 2 entao
-         escreval("O",vet[j]," nÃºmero Ã© primo")
+         escreval("O",vet[j]," número é primo")
       senao
-         escreval("O",vet[j]," nÃºmero nÃ£o Ã© primo")
+         escreval("O",vet[j]," número não é primo")
       fimse
-      cont<- 0
 
    fimpara
 fimprocedimento
 Inicio
-   // SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc...
+   // Seção de Comandos, procedimento, funções, operadores, etc...
 
    vet[0] <-3
    vet[1] <-4
